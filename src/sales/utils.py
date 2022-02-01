@@ -37,7 +37,6 @@ def get_chart(chart_type, data, **kwargs):
     plt.switch_backend('AGG')
     fig = plt.figure(figsize=(10, 4))
     if chart_type == '#1':
-        # plt.bar(data['transaction_id'], data['price'])
         sns.barplot(x='transaction_id', y='price', data=data)
     elif chart_type == '#2':
         labels = kwargs.get('labels')
