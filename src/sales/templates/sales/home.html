@@ -15,9 +15,14 @@
     <br>
 
     {% if sales_df %}
+        sales DataFrame
         {{ sales_df|safe }}
         <br>
+        positions DataFrame
         {{ positions_df|safe }}
+        <br>
+        merged DataFrame
+        {{ merged_df|safe }}
     {% else %}
         <h3>no data</h3>
     {% endif %} 
